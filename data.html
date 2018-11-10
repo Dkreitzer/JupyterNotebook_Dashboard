@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Latitude weather project data used">
+            <meta name="author" content="David Kreitzer">
+    
+            <title>Latitude Impacts on weather conditions data</title>
+    
+            <!--add favicon -->
+            <link rel="shortcut icon" href="img/kreitzerhof_favico.ico">
+    
+            <!-- Local boot strap link to local folder -->
+            <link href="css/bootstrap-theme.min.css.map" rel="stylesheet">
+            
+            <!-- NOT EXACTLY SURE WHAT THIS ONE IS EITHER -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            
+            <!-- Bootstrap Javascript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+            <!-- NO IDEA WHAT THIS SCRIPT DOES... -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- THE LINE BELOW IS WHAT MAKES THE DROPDOWN MENU REACTIVE - VERY IMPORTANT...-->
+            <script src="js/bootstrap.min.js"></script>
+            
+            <!-- Style sheet to fix log sizing?... -->
+            <link href="css/basic-template.css" rel="Stylesheet"/>
+    </head>
+
+    <body>
+
+<!--  Naviation Bar for top of website -->
+<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+            <img width = 100px src="images/kreitzerhofLogo.svg"/>
+            </div>
+              
+ <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home Page <span class="sr-only">(current)</span></a></li>
+ 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="data.html">Data Used</a></li>
+              <li><a href="comparisons.html">Comparisons</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="temperature.html">Lat vs. Temp</a></li>
+              <li><a href="windspeed.html">Lat vs. Wind</a></li>
+              <li><a href="humidity.html">Lat vs. Humidity</a></li>
+              <li><a href="overcast.html">Lat vs. Overcast</a></li>
+ 
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+        
+        <div class = "container">
+          <div class="row">
+            <div class="col-md-1">
+                <!-- Intentionally left blank -->
+             </div>
+        
+            <div class="col-md-4">
+                    <h2>Data Source</h2>
+                    <br>
+                    <p>
+                        <img width = "250" src = "openweathermapLogo.png"/><hr>
+                        All of our weather data was collected from OpenWeatherMap.org using an API to pull the data.<hr>
+                        OpenWeatherMap.org collects weather data from around the globe including temperature, precipitation, wind speed and more.<br>
+                        Users are able to search for geospecific information using vary keywords or Geocoordinates.<hr>
+                        For this assignment, we randomly generated no less than 500 longitude and Latitude locations and queried weather information from the nearest reporting station to our list of locations.<br>
+                        <br>Click <a target = _blank href = "table.html">Here</a> to view the entire dataframe of cities used for this assignment.
+
+                    </p>            
+                    
+                    <br>
+                    <br>
+                    
+            </div>
+            <div class="col-md-1">
+                <!-- Intentionally left blank -->
+            </div>
+            <div class="col-md-6">
+                <h3>Sample of the data used:</h3><hr>
+                <table border="1" class="table table-hover", class="table table-bordered">
+                    <thead>
+                      <tr style="text-align: right;">
+                        
+                        <th>City</th>
+                        <th>Lat</th>
+                        <th>Lng</th>
+                        <th>Temp</th>
+                        <th>Humidity</th>
+                        <th>Cloudiness</th>
+                        <th>Wind Speed</th>
+                        <th>City ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        
+                        <td>anadyr</td>
+                        <td>60.950009</td>
+                        <td>174.863031</td>
+                        <td>33.80</td>
+                        <td>95</td>
+                        <td>90</td>
+                        <td>29.08</td>
+                        <td>2127202</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>mahebourg</td>
+                        <td>-46.730664</td>
+                        <td>80.780934</td>
+                        <td>77.00</td>
+                        <td>78</td>
+                        <td>40</td>
+                        <td>13.87</td>
+                        <td>934322</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>cape town</td>
+                        <td>-59.073003</td>
+                        <td>-8.722237</td>
+                        <td>64.40</td>
+                        <td>59</td>
+                        <td>0</td>
+                        <td>11.41</td>
+                        <td>3369157</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>arraial do cabo</td>
+                        <td>-53.085996</td>
+                        <td>-17.658755</td>
+                        <td>69.69</td>
+                        <td>100</td>
+                        <td>92</td>
+                        <td>13.02</td>
+                        <td>3471451</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>kenai</td>
+                        <td>64.079030</td>
+                        <td>-152.434290</td>
+                        <td>36.93</td>
+                        <td>72</td>
+                        <td>1</td>
+                        <td>5.82</td>
+                        <td>5866063</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 
+                  Click <a target = _blank href = "table.html">Here</a> to view the entire dataframe
+
+
+                <br>
+                <h3>Programs and Libraries used to gather and analyze data:</h3>
+                <p>
+                       <ul>
+                           <li>Python Jupyter Notebook</li>
+                           <li>Pandas Library</li>
+                           <li>Matplotlib</li>
+                           <li>Numpy</li>
+                           <li>Requests (for API calls)</li>
+                           <li>Time and Datetime</li>
+                           <li>Citipy</li>
+                       </ul>
+                        
+                </p>
+            </div>
+          </div>
+        </div>
+        
+        </body>
+        </html>

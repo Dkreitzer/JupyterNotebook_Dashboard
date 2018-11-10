@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Latitude weather project">
+            <meta name="author" content="David Kreitzer">
+    
+            <title>Latitude Impacts on Weather Conditions</title>
+    
+            <!--add favicon -->
+            <link rel="shortcut icon" href="img/kreitzerhof_favico.ico">
+    
+            <!-- Local boot strap link to local folder -->
+            <link href="css/bootstrap-theme.min.css.map" rel="stylesheet">
+            
+            <!-- NOT EXACTLY SURE WHAT THIS ONE IS EITHER -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            
+            <!-- Bootstrap Javascript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+            <!-- NO IDEA WHAT THIS SCRIPT DOES... -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- THE LINE BELOW IS WHAT MAKES THE DROPDOWN MENU REACTIVE - VERY IMPORTANT...-->
+            <script src="js/bootstrap.min.js"></script>
+            
+            <!-- Style sheet to fix log sizing?... -->
+            <link href="css/basic-template.css" rel="Stylesheet"/>
+    </head>
+
+    <body>
+
+<!--  Naviation Bar for top of website -->
+<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+            <img width = 100px src="images/kreitzerhofLogo.svg"/>
+            </div>
+              
+ <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home Page <span class="sr-only">(current)</span></a></li>
+ 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="data.html">Data Used</a></li>
+              <li><a href="comparisons.html">Comparisons</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="temperature.html">Lat vs. Temp</a></li>
+              <li><a href="windspeed.html">Lat vs. Wind</a></li>
+              <li><a href="humidity.html">Lat vs. Humidity</a></li>
+              <li><a href="overcast.html">Lat vs. Overcast</a></li>
+ 
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div class = "container">
+<h1><center>Latitude Weather Analysis</center></h1><br><br>
+</div>
+
+<div class = "container">
+    <div class="row">
+    <div class="col-md-1">
+        <!-- Intentionally left blank -->
+     </div>
+
+    <div class="col-md-4">
+            <h2>Latitude:</h2> in geography, latitude is a geographic coordinate that specifies the north-south position of a point on the Earth’s surface.
+            <br>
+            <br>
+            <section id = "figure">
+            <p><img width="250" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg/300px-Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg.png" /></p>
+            <p> <i>Image and definition are from 
+                <a target = blank_ href = "https://en.wikipedia.org/wiki/Latitude">wikipedia</a> </i></p>
+            </section>
+    </div>
+    <div class="col-md-1">
+        <!-- Intentionally left blank -->
+    </div>
+    <div class="col-md-6">
+        <h2>Does Latitude impact weather conditions?</h2>
+        <p>
+                If we are just measuring average temperature, then the quick answer is the average, low, and high temperatures are probably impacted based on your proximity to the Equator. But what about other weather conditions such as wind speed, cloudiness, and humidity?
+        </p>
+        <br>
+      
+        <h3>About this site:</h3>
+        <p>
+                If you found this site with the expectation of finding answers to your facinating list of questions about the relationship between latitude and weather conditions, I’m sorry to disappoint you but that’s not what your going to find here.
+                <br><br>This site was developed as part of a school project for a
+                <a target = blank_ href= "https://bootcamp.umn.edu/data/"> Data Analytics and Visualization Bootcamp</a>
+                I’m taking at the University of Minnesota.
+                We did set out to answer the question above, but really the point of the exercise was to use python to collect data using an API and visualize our findings with Matplotlib.
+                <br><br>For more information what tools were used and the source of data, please visit our <a href = "data.html">Data page</a>.
+                <br><br>If you were really looking for more information on how latitude impacts weather conditions, feel free to click
+                <a target="_blank" href="http://lmgtfy.com/?q=how+are+climate+conditions+impacted+by+latitude%3F">here</a>
+                
+        </p>
+    </div>
+</div>
+</div>
+
+    </body>
+</html>

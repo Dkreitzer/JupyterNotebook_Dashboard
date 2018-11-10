@@ -1,0 +1,65 @@
+
+/* myStyle.css */
+  /* h1 heading tag */
+ body {
+   background-color: #dfe1e2;
+   font: "Times New Roman", Times, serif;
+   color: #333333;
+   margin-top: 0px;
+   padding-top: 0%
+ }
+ 
+  header {
+   background-color: #f5f1f1
+ }
+ 
+  h1 {
+  
+    color: rgb(46, 43, 43);
+    font-size: 28px;
+   
+    /* Underline the text. */
+    text-decoration: underline;
+  }
+
+  h2 {
+   font-size: 24px;
+   margin:0 auto;
+
+  }
+
+  /* All img tags */
+  img {
+    /* 
+      Center a block element in the middle of its enclosing tag.
+      When you use the "auto" rule on both left and right margins, 
+      your browser will do the math necessary to center a block element.
+      */
+    margin-left: auto;
+    margin-right: auto;
+    /* Block display (more on this later) */
+    display: block;
+    /* box-shadow: 10px 10px 5px black; */
+  }
+
+  /* All p tags */
+  p {
+    text-align: left;
+    font-size: 20px;
+    /* Bold the text. */
+    /* font-weight: bold; */
+  }
+
+  /* All unordered list tags */
+  ul {
+    text-align: left;
+    font-size: 20px;
+    /* Give an element a solid border. */
+    border-style: solid;
+    /* Render the border 5 pixels thick. */
+    border-width: 3px;
+    /* Include bullets in the content flow. */
+    /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+    list-style-position: inside;
+  }
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Latitude weather project impact on windspeed">
+            <meta name="author" content="David Kreitzer">
+    
+            <title>Latitude Impacts on wind speed Conditions</title>
+    
+            <!--add favicon -->
+            <link rel="shortcut icon" href="img/kreitzerhof_favico.ico">
+    
+            <!-- Local boot strap link to local folder -->
+            <link href="css/bootstrap-theme.min.css.map" rel="stylesheet">
+            
+            <!-- NOT EXACTLY SURE WHAT THIS ONE IS EITHER -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            
+            <!-- Bootstrap Javascript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+            <!-- NO IDEA WHAT THIS SCRIPT DOES... -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- THE LINE BELOW IS WHAT MAKES THE DROPDOWN MENU REACTIVE - VERY IMPORTANT...-->
+            <script src="js/bootstrap.min.js"></script>
+            
+            <!-- Style sheet to fix log sizing?... -->
+            <link href="css/basic-template.css" rel="Stylesheet"/>
+    </head>
+
+    <body>
+
+<!--  Naviation Bar for top of website -->
+<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+            <img width = 100px src="images/kreitzerhofLogo.svg"/>
+            </div>
+              
+ <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home Page <span class="sr-only">(current)</span></a></li>
+ 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="data.html">Data Used</a></li>
+              <li><a href="comparisons.html">Comparisons</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="temperature.html">Lat vs. Temp</a></li>
+              <li><a href="windspeed.html">Lat vs. Wind</a></li>
+              <li><a href="humidity.html">Lat vs. Humidity</a></li>
+              <li><a href="overcast.html">Lat vs. Overcast</a></li>
+ 
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class = "container">
+    <!-- Header Row -->
+        <div class="row">
+        <div class="col-md-12">
+                <h1><center>Latitude & Wind Speed</center></h1>
+        </div>
+            </div>
+    <br><br>
+         
+<div class="row">
+        <div class="col-md-12">
+            <div class="media">
+                <a target = "_blank" href="Jupyter_Notebook/WeatherPy_WindSpeed.vs.Lat.png" class = "thumbnail pull-left">
+                        <img  src="Jupyter_Notebook/WeatherPy_WindSpeed.vs.Lat.png" alt="Matplotlib WindSpeed" />
+                </a>
+                <div class="media-body">
+                <h4>Matplotlib Scatter Plot of Lat & Wind Speed(mph)</h4>
+                <p>
+                    update text
+                    </p>    
+                
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+                <div class="media">
+                    <a target="_blank" href="https://earth.nullschool.net/#current/wind/surface/level/patterson" class="thumbnail pull-left">
+                            <img width = "430px" src="images/worldwind.PNG" alt="worldwind map" />
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">What parts of the world are the windiest?</h4>
+                        <p>
+                        update text    
+                        </p>   
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Latitude weather project impact on temperature">
+            <meta name="author" content="David Kreitzer">
+    
+            <title>Latitude Impacts on temperature Conditions</title>
+    
+            <!--add favicon -->
+            <link rel="shortcut icon" href="img/kreitzerhof_favico.ico">
+    
+            <!-- Local boot strap link to local folder -->
+            <link href="css/bootstrap-theme.min.css.map" rel="stylesheet">
+            
+            <!-- NOT EXACTLY SURE WHAT THIS ONE IS EITHER -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            
+            <!-- Bootstrap Javascript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+            <!-- NO IDEA WHAT THIS SCRIPT DOES... -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- THE LINE BELOW IS WHAT MAKES THE DROPDOWN MENU REACTIVE - VERY IMPORTANT...-->
+            <script src="js/bootstrap.min.js"></script>
+            
+            <!-- Style sheet to fix log sizing?... -->
+            <link href="css/basic-template.css" rel="Stylesheet"/>
+    </head>
+
+    <body>
+
+<!--  Naviation Bar for top of website -->
+<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+            <img width = 100px src="images/kreitzerhofLogo.svg"/>
+            </div>
+              
+ <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home Page <span class="sr-only">(current)</span></a></li>
+ 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="data.html">Data Used</a></li>
+              <li><a href="comparisons.html">Comparisons</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="temperature.html">Lat vs. Temp</a></li>
+              <li><a href="windspeed.html">Lat vs. Wind</a></li>
+              <li><a href="humidity.html">Lat vs. Humidity</a></li>
+              <li><a href="overcast.html">Lat vs. Overcast</a></li>
+ 
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+        
+        <div class = "container">
+       <!-- Header Row -->
+        <div class="row">
+           <div class="col-md-12">
+                <h1><center>Latitude & Temperature</center></h1>
+           </div>
+            </div>
+      <br><br>
+       
+        
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a target = "_blank" href="Jupyter_Notebook/WeatherPy_Temp.vs.Lat.png" class = "thumbnail pull-left">
+                                <img  src="Jupyter_Notebook/WeatherPy_Temp.vs.Lat.png" alt="Matplotlib Temp" />
+                        </a>
+                        <div class="media-body">
+                        <h4>Matplotlib Scatter Plot of Lat & Temp(F)</h4>
+                        <p>
+                                The date of this temperature snapshot is November 11th, 2018, so well into the northern hemisphere beginning to experience shorter days and colder temperatures (and obviously the opposite in the southern hemisphere).
+                            </p><br />
+                            <p>
+                                Based on the data collected, the further north (greater latitude value) the colder the temperature!
+ 
+                            </p>    
+                        
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="media">
+                            <a target="_blank" href="https://www.ncdc.noaa.gov/sotc/service/global/map-blended-mntp/201711-t.gif" class="thumbnail pull-left">
+                                    <img width = "430px" src="https://www.ncdc.noaa.gov/sotc/service/global/map-blended-mntp/201711-t.gif" alt="worldwind map" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Is this abnormal weather?</h4>
+                                <p>
+                                    This isn't where you'll find any in depth information or arguments for or against global warming, but this image from the National Centers For Enviornmental Information is pretty interesting.
+                                </p>
+                                <p>
+                                    For most of the world, November 2017 temperatures were within +/-2 degrees Celsius from the previous ~30 years of weather data collected.
+                                </p>
+                                 <p>
+                                    There are some extreme cases where the temperature is significantly (more than 3 Degrees Celsius) warmer or colder. The greatest departures from average temperatures are all located in the northern hemisphere.
+                                 </p>   
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+            </body>
+        </html>
