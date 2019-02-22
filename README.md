@@ -6,3 +6,4 @@
 
 #### The project is pretty straight forward:
 #### Incorporate the matplotlib images created in the Jupyter Notebook project Dkreitzer/Random_500-City_Weather_Analysis into a bootstrap html website.
+![web](images/JupyterNotebook_Dashboard_Screenshot.png)
